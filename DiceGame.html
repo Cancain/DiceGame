@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<title>Dice Roll</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h4>Player</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <label id="roundLabel"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <label id="labelPlayerTotscore"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <img src="" alt="" id="playerImgDice1" class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="playerImgDice2" class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="playerImgDice3" class="img-fluid">
+            </div>
+            <div class="col-2">
+                    <img src="" alt="" id="playerImgDice4" class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="playerImgDice5" class="img-fluid">
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <label id="labelPlayerScore"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <label id="labelPlayerScoreComment"></label>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <button id="keep1btn" class="btn btn-sm">Keep</button>
+            </div>
+            <div class="col-2">
+                <button id="keep2btn" class="btn btn-sm">Keep</button>
+            </div>
+            <div class="col-2">
+                <button id="keep3btn" class="btn btn-sm">Keep</button>
+            </div>
+            <div class="col-2">
+                <button id="keep4btn" class="btn btn-sm">Keep</button>
+            </div>
+            <div class="col-2">
+                <button id="keep5btn" class="btn btn-sm">Keep</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col text-center">               
+                <h4>Computer</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <label id="labelComputerTotscore"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <img src="" alt="" id="compImgDice1"class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="compImgDice2"class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="compImgDice3"class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="compImgDice4"class="img-fluid">
+            </div>
+            <div class="col-2">
+                <img src="" alt="" id="compImgDice5"class="img-fluid">
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col">
+                <label id="labelComputerScore"></label>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <label id="labelComputerScoreComment"></label>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col text-center">
+                <button id="rollBtn" class="btn">Roll Dices</button>   
+                <button id="scoreRollBtn" class="btn">Score roll</button>
+                <button id="newGameBtn" class="btn">New Game</button>
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="js/Gameplay.js"></script>
+</body>
+</html>
